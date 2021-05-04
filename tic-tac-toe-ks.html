@@ -1,38 +1,30 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tic-tac-toe-ks.css">
 </head>
 <body>
+    
+    <h1 class="game--title">Tic Tac Toe</h1>
+    <p id="hint">Zum spielen</p>
+        <div class="tic-tac-toe" id="board" onclick = "markField(event);"> 
+            <!-- mark = funcion, event = object-->
+            <button aria-label="" class="btn"></button>
+            <button aria-label="" class="btn"></button> 
+            <button aria-label="" class="btn"></button>
+            <button aria-label="" class="btn"></button>
+            <button aria-label="" class="btn"></button>
+            <button aria-label="" class="btn"></button>
+            <button aria-label="" class="btn"></button>
+            <button aria-label="" class="btn"></button>
+            <button aria-label="" class="btn"></button>
+        </div>
 
-
-  <style type="text/css" media="all">
-    td {
-      width: 100px;
-      height: 100px;
-      background: black;
-      color: white;
-      line-height: 100px;
-      text-align: center;
-      font-size: 3rem;
-    }
-  </style>
-  <button type="submit">Reset</button>
-  <table border="0">
-    <tr>
-      <td id="1"></td>
-      <td id="2"></td>
-      <td id="3"></td>
-    </tr>
-    <tr>
-      <td id="4"></td>
-      <td id="5"></td>
-      <td id="6"></td>
-    </tr>
-    <tr>
-      <td id="7"></td>
-      <td id="8"></td>
-      <td id="9"></td>
-    </tr>
-  </table>
-  <script>
+    <script src="tic-tac-toe.ks.js"></script>
+</body>
+</html>
