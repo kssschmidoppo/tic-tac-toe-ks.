@@ -71,17 +71,17 @@ function markField(mouseEvent) {
 
 }
 
-// declear function allFlieldsAreSelected
+// declear function allFieldsAreSelected
 function allFieldsAreSelected() {
-  //alert("here we go");
+  //alert ("here we go");
 
   //declear the variable fields and set it to the list of field object,
   //using document.querySelectorAll()
   var fields = document.querySelectorAll(".btn");
-  //alert(fields); = NobeList
+  //alert (fields); = NobeList
 
   //fields is a list/Array, lets get the length of the list 
-  //alert(fields.length); = 9 
+  //alert (fields.length); = 9 
   var lengf = fields.length; // lengf for length
 
 
@@ -92,13 +92,13 @@ function allFieldsAreSelected() {
     var f = fields[ c ];// object from the list fields
 
     //f.getAttribute("aria-label")
-    //alert( f.getAttribute("aria-label"));
+    //alert (f.getAttribute("aria-label"));
     if (f.getAttribute("aria-label")== "") {
       //alert("bingo");
       return false;
     }   
   }
-  //alert("bongo");
+  //alert ("bongo");
   return true;
 
 }
